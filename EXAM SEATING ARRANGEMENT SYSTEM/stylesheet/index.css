@@ -1,0 +1,352 @@
+
+
+.navbar
+{
+    background-color: white;
+}
+.nav-item a
+{
+    font-weight: bold;font-size: larger;margin-right: 5px;
+}
+.nav-item a:hover
+{
+    color: red;transform: scale(1.1);
+}
+#HOME
+{
+    color: red;transform: scale(1.1);
+}
+
+/* BANNER CSS */
+
+#banner {
+    background-image: url('images/bannerpic.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+    z-index: 1;
+    text-align: center; 
+}
+
+#banner::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(32, 32, 32), rgb(39, 39, 39), transparent);
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#banner h2 {
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 2%;
+}
+
+#banner p {
+    color: white;font-size: larger;
+}
+
+#banner button {
+    background-color: transparent;
+    border: 2px solid white;
+    margin-right: 2%;
+}
+
+#banner button:hover {
+    background-color: red;
+}
+
+
+/* FEATURES CSS */
+
+#features
+{
+    margin-top: 10%;padding-left: 25px;
+}
+#features_part1
+{
+    margin-top: 8%;
+}
+#features_part1 h3
+{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;height: 70px;
+    font-weight: bold;letter-spacing: 3px;font-size: 40px;padding-left: 15px;padding-top:10px ;
+    border-left: 12px solid red;margin-bottom: 5%;
+}
+#features h4
+{
+    font-weight: bolder;
+}
+#features_part1 p
+{
+    font-size:larger;
+}
+#features_part2 .row
+{
+    margin-bottom: 10%;
+}
+#features_part2 p
+{
+    font-size:25px;font-weight: 400;
+}
+
+
+
+/* PATH CSS */
+
+#path
+{
+    background-color: rgba(255,243,241,255);padding-top: 5%;padding-left: 3%;
+}
+#path h3
+{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;height: 70px;
+    font-weight: bold;letter-spacing: 3px;font-size: 40px;padding-left: 15px;padding-top:10px ;
+    border-left: 12px solid red;margin-bottom: 5%;
+}
+#path .imgcircles
+{
+    height: 60px;width: 80px;padding: 0px;
+}
+#path img
+{
+    height: 60px;width: 60px;position: relative;left: 50%;transform: translate(-30%);
+}
+#path h4
+{
+    font-weight: bolder;font-size: 30px;
+}
+#path p
+{
+    font-size:larger;font-size: 25px;
+}
+
+
+
+/* REVIEW CSS */
+
+#reviews {
+    padding-top: 5%;background-color: white;padding-bottom: 5%;overflow-x: hidden;
+}
+
+#reviews h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 70px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 40px;
+    padding-left: 15px;
+    padding-top: 10px;
+    border-left: 12px solid red;
+    margin-bottom: 5%;margin-left: 5%;
+}
+
+#reviews .reviewbox {
+    border: 2px solid #e1e1e1;border-radius: 15px;box-shadow: 10px 12px 4px 1px #7c7c7c ;
+    background-color: #e1e1e1;height:fit-content;
+    padding: 20px; /* Added padding for better appearance */
+}
+#reviews .reviewbox div
+{
+    height: 150px;width: 150px;border: 2px solid #595656;border-radius: 50%;overflow: hidden;
+    position: relative;left: 50%;transform: translate(-50%);margin-bottom: 10%;
+}
+#reviews .reviewbox p
+{
+    font-weight:500;font-size: larger;
+}
+#reviews .reviewbox h5
+{
+    font-weight: bolder;font-size: larger;font-style: italic;
+}
+#reviews #user1 h5
+{
+    margin-top: 15%;
+}
+#reviews #user2 h5
+{
+    margin-top: 22%;
+}
+#reviews #user4 h5
+{
+    margin-top: 11%;
+}
+.carousel-inner
+{
+    padding-bottom: 5%;left: 50px;
+}
+
+.carousel-control-prev 
+{
+    right: 50px; /* Adjust this value to move left */
+}
+.carousel-control-next 
+{
+    right: 10px; /* Adjust this value to move left */
+}
+.carousel-control-prev-icon,.carousel-control-next-icon 
+{
+    background-color: black; /* Change icon background color to black */
+    border-radius: 50%;
+}
+
+.carousel-indicators {
+    bottom: -50px;display: flex;
+}
+.carousel-indicators button 
+{
+    width: 30px !important;               /* Width of the button */
+    height: 30px !important;              /* Height of the button */
+    border-radius: 50%;        
+    background-color: rgb(160, 160, 160) !important;    /* Default color for inactive buttons */
+}
+.carousel-indicators .active 
+{
+    width: 20px;               
+    height: 20px; 
+    background-color: rgb(73, 73, 73) !important;   
+}
+
+
+
+/* FAQ CSS */
+
+
+#faq
+{
+    padding-top: 5%;padding-bottom: 5%;
+}
+#faq h3
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 70px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 40px;
+    padding-left: 15px;
+    padding-top: 10px;
+    border-left: 12px solid red;
+    margin-bottom: 5%;margin-left: 5%;
+}
+#faqques
+{
+    padding: 0px;
+}
+.accordion-header button
+{
+    font-weight: bolder;font-size: 25px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+#firstques
+{
+    border-top:3px solid black ;
+}
+.accordion-button 
+{
+    border-bottom: 3px solid black;outline: none;padding-top: 35px;padding-bottom: 35px;
+}
+.accordion-button:not(.collapsed) 
+{
+    color: rgb(0, 0, 0); /* Text color when expanded */
+    border-color: black; /* Border color when expanded */
+    border-bottom: 3px solid rgb(255, 255, 255);
+    box-shadow: none;
+}
+.evenques
+{
+    background-color: rgba(255,243,241,255); /* Background color when expanded */
+}
+.accordion-item
+{
+    border: none; /* Optional: remove border around items */
+}
+.accordion-body
+{
+    font-size: larger;font-weight: 400;
+}  
+
+
+/* START CSS */
+
+#start 
+{
+    background-image: url('images/students.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+    z-index: 1;
+    text-align: center; 
+}
+#start::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(32, 32, 32), rgb(39, 39, 39), transparent);
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#start h2
+{
+    color: white;
+    font-weight: bolder;font-size: 35px;
+    margin-bottom: 2%;
+}
+#start button
+{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+#start button:hover
+{
+    background-color: red;
+}
+
+
+/* CONTACT CSS */
+
+#contact
+{
+    background-color: #efe8e8;padding-top: 7%;padding-left: 3%;padding-bottom: 5%;
+}
+#contact a
+{
+    display: block;font-size: 30px;color: black;margin-bottom: 5%;
+}
+#contact #parts
+{
+    display: block;
+    font-size: 25px;color: black;margin-bottom: 5%;font-weight: 500;
+}
+#contact #parts a
+{
+    display: inline;font-size: 25px;
+}
+#contact address
+{
+    font-size: 25px;color: black;margin-bottom: 5%;font-weight: 500;
+}
+#contact span
+{
+    display: block;
+    font-size: 25px;color: black;font-weight: 500;
+}  
