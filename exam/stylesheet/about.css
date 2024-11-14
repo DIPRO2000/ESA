@@ -198,6 +198,10 @@
     border: 2px solid white;
     color: white;
 }
+#start button a
+{
+    text-decoration: none;color: white;
+}
 #start button:hover
 {
     background-color: red;
@@ -221,7 +225,11 @@
 }
 #contact #parts a
 {
-    display: inline;font-size: 25px;
+    display: inline;font-size: 25px;text-decoration: none;
+}
+#contact #parts a:hover
+{
+    color: red;
 }
 #contact address
 {

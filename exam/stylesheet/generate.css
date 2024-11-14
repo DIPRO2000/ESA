@@ -55,11 +55,28 @@
 
 /* SELECTION PROCESS CSS  */
 
-#radio_buttons_section h2
+#department_year_selection_section_header
 {
     font-weight: bolder;text-align: center;font-size: 40px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 3vw;margin-bottom: 5vw;
+}
+.form-label
+{
+    font-size: 20px;font-weight: bold;
+}
+.form-control
+{
+    height: 10vh;border: 2px solid black;border-radius: 0%;font-size: 30px;
+}
+
+
+
+
+#radio_buttons_section_header
+{
+    text-align: center;font-weight: bold;font-size: 50px;margin-top: 3vw;margin-bottom: 3vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .radio-container {
@@ -192,6 +209,10 @@
     border: 2px solid white;
     color: white;
 }
+#start button a
+{
+    text-decoration: none;color: white;
+}
 #start button:hover
 {
     background-color: red;
@@ -215,7 +236,11 @@
 }
 #contact #parts a
 {
-    display: inline;font-size: 25px;
+    display: inline;font-size: 25px;text-decoration: none;
+}
+#contact #parts a:hover
+{
+    color: red;
 }
 #contact address
 {
