@@ -1,0 +1,234 @@
+
+
+.navbar
+{
+    background-color: white;
+}
+.nav-item a
+{
+    font-weight: bold;font-size: larger;margin-right: 5px;
+}
+.nav-item a:hover
+{
+    color: red;transform: scale(1.1);
+}
+#ABOUT
+{
+    color: red;transform: scale(1.1);
+}
+
+/* BANNER CSS */
+
+#banner {
+    background-image: url('images/classroom2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    position: relative;
+    z-index: 1;
+    text-align: center; 
+}
+
+#banner::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(32, 32, 32), rgb(39, 39, 39), transparent);
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#banner_content
+{
+    position: relative;left: 40px;
+}
+#banner h2
+{
+    font-size: 70px;
+    color: white;
+    margin-bottom: 7vh;
+}
+#banner p
+{
+    font-size:20px;
+    color: white;text-align: center;margin-bottom: 2vw;
+}
+
+
+/* TEAM CSS */
+
+#intro
+{
+    background-color:rgba(255,233,228,255);
+    padding-top: 5%;padding-bottom: 10%;
+}
+#intro_heading
+{
+    text-align: center;font-size: 50px;font-weight: 500;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;margin-bottom: 10vw;
+}
+
+#intro .colleges {
+    display: grid;
+    grid-template-columns: repeat(3, 30vw); margin-left: 1vw;
+    column-gap: 35px;
+}
+
+.team-member {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    box-shadow: 10px 17px 7px rgba(0, 0, 0, 0.3);
+}
+
+.team-member h2
+{
+    text-align: center;padding-top: 5vw;font-weight: 600;
+}
+.team-member h4
+{
+    text-align: center;
+}
+.team-member span
+{
+    display: block;text-align: center;padding-top: 3vw;padding-bottom: 5vw;font-size: large;
+    font-weight: bold;font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* FAQ CSS */
+
+
+#faq
+{
+    padding-top: 5%;padding-bottom: 5%;
+}
+#faq h3
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 70px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 40px;
+    padding-left: 15px;
+    padding-top: 10px;
+    border-left: 12px solid red;
+    margin-bottom: 5%;margin-left: 5%;
+}
+#faqques
+{
+    padding: 0px;
+}
+.accordion-header button
+{
+    font-weight: bolder;font-size: 25px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+#firstques
+{
+    border-top:3px solid black ;
+}
+.accordion-button 
+{
+    border-bottom: 3px solid black;outline: none;padding-top: 35px;padding-bottom: 35px;
+}
+.accordion-button:not(.collapsed) 
+{
+    color: rgb(0, 0, 0); /* Text color when expanded */
+    border-color: black; /* Border color when expanded */
+    border-bottom: 3px solid rgb(255, 255, 255);
+    box-shadow: none;
+}
+.evenques
+{
+    background-color: rgba(255,243,241,255); /* Background color when expanded */
+}
+.accordion-item
+{
+    border: none; /* Optional: remove border around items */
+}
+.accordion-body
+{
+    font-size: larger;font-weight: 400;
+}  
+
+
+/* START CSS */
+
+#start 
+{
+    background-image: url('images/students.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+    z-index: 1;
+    text-align: center; 
+}
+#start::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(32, 32, 32), rgb(39, 39, 39), transparent);
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#start h2
+{
+    color: white;
+    font-weight: bolder;font-size: 35px;
+    margin-bottom: 2%;
+}
+#start button
+{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+#start button:hover
+{
+    background-color: red;
+}
+
+
+/* CONTACT CSS */
+
+#contact
+{
+    background-color: #efe8e8;padding-top: 7%;padding-left: 3%;padding-bottom: 5%;
+}
+#contact a
+{
+    display: block;font-size: 30px;color: black;margin-bottom: 5%;
+}
+#contact #parts
+{
+    display: block;
+    font-size: 25px;color: black;margin-bottom: 5%;font-weight: 500;
+}
+#contact #parts a
+{
+    display: inline;font-size: 25px;
+}
+#contact address
+{
+    font-size: 25px;color: black;margin-bottom: 5%;font-weight: 500;
+}
+#contact span
+{
+    display: block;
+    font-size: 25px;color: black;font-weight: 500;
+}  
