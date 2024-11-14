@@ -519,54 +519,63 @@
             ).innerHTML = `<img src="${imagePath}" alt="Selected Image" class="img-fluid">`;}
 
             
-            fetch(`http://localhost:3001/seats?department=${department}&year=${year}`)
-    .then((response) => response.json())
-    .then((data) => {
-      const backendResult = document.getElementById("backendResult");
+  fetch(`http://localhost:3001/seats?department=${department}&year=${year}`)
+  .then((response) => response.json())
+  .then((data) => {
+    const backendResult = document.getElementById("backendResult");
 
-      if (data.seats && data.seats.length > 0) {
-        
-        let tableHTML = `
+    if (data.seats && data.seats.length > 0) {
+      let tableHTML = `
   <table class="table table-bordered" style="border: 3px solid black; width: 100%; text-align: center; border-collapse: collapse;">
     <thead>
       <tr>
         <th style="font-size: 1.2em; border: 2px solid black; padding: 10px;">Serial No.</th>
         <th style="font-size: 1.2em; border: 2px solid black; padding: 10px;">Name</th>
         <th style="font-size: 1.2em; border: 2px solid black; padding: 10px;">Enrollment Number</th>
+        <th style="font-size: 1.2em; border: 2px solid black; padding: 10px;">Room No.</th>
       </tr>
     </thead>
     <tbody>
-`;
+  `;
 
-data.seats.forEach((seat, index) => {
-  tableHTML += `
+      let index = 1;
+      let roomNo = 101;
+
+      data.seats.forEach((seat) => {
+        tableHTML += `
     <tr>
-      <td style="border: 2px solid black; padding: 10px; font-size: 1em;">${index + 1}</td>
+      <td style="border: 2px solid black; padding: 10px; font-size: 1em;">${index}</td>
       <td style="border: 2px solid black; padding: 10px; font-size: 1em;">${seat.name}</td>
       <td style="border: 2px solid black; padding: 10px; font-size: 1em;">${seat.enrollment_number}</td>
+      <td style="border: 2px solid black; padding: 10px; font-size: 1em;">${roomNo}</td>
     </tr>
   `;
-});
 
-tableHTML += `
+        // Increment index and check if it should reset
+        index++;
+        if (index > 20) {
+          index = 1;
+          roomNo++;  // Increment room number after 36 students
+        }
+      });
+
+      tableHTML += `
     </tbody>
   </table>
-`;
+  `;
 
-
-        
-        backendResult.innerHTML = tableHTML;
-      } else {
-        backendResult.textContent = `No seats found for ${department.replace(/%20/g, ' ')} - ${year}.`;
-      }
-      document.getElementById("outputDiv").style.display = "block";
-    })
-    .catch((error) => {
-      console.error("Error:", error);
-      document.getElementById("backendResult").textContent = "An error occurred.";
-      document.getElementById("outputDiv").style.display = "block";
-    });
-});
+      backendResult.innerHTML = tableHTML;
+    } else {
+      backendResult.textContent = `No seats found for ${department.replace(/%20/g, ' ')} - ${year}.`;
+    }
+    document.getElementById("outputDiv").style.display = "block";
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+    document.getElementById("backendResult").textContent = "An error occurred.";
+    document.getElementById("outputDiv").style.display = "block";
+  });
+  });
 
 
 function printSelectedContent() {
